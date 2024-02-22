@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+	<bean id="s1" class="com.kn.bean.Student">
+		<property name="id" value="01"/>
+		<property name="name" value="Suresh"/>
+		<property name="marks" value="87"/>	
+	</bean>
+	
+	<bean id="laptop" class="com.kn.bean.Laptop">
+		<property name="serialNumber" value="3121"/>
+		<property name="manufacturer" value="HP"/>
+		<property name="cost" value="39000.00"/>	
+	</bean>
+	
+	<bean id="laptop2" class="com.kn.bean.Laptop2">
+		<constructor-arg name="serialNumber" value="4121"/>
+		<constructor-arg  name="manufacturer" value="Dell"/>
+		<constructor-arg name="cost" value="45030.00"/>	
+	</bean>
+
+
+
+</beans>
